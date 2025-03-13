@@ -676,10 +676,10 @@ def main():
     parser.add_argument("--algorithm", type=str, default="gnn_il_pcr",
                         choices=["local_only", "greedy", "gnn_drl", "gnn_il_pcr", "branch_and_bound"],
                         help="要运行的算法")
-    parser.add_argument("--num_runs", type=int, default=3, help="每个任务数量下的运行次数")
-    parser.add_argument("--task_min", type=int, default=0, help="最小任务数量")
-    parser.add_argument("--task_max", type=int, default=1000, help="最大任务数量")
-    parser.add_argument("--task_step", type=int, default=100, help="任务数量步长")
+    parser.add_argument("--num_runs", type=int, default=5, help="每个任务数量下的运行次数")
+    parser.add_argument("--task_min", type=int, default=10, help="最小任务数量")
+    parser.add_argument("--task_max", type=int, default=100, help="最大任务数量")
+    parser.add_argument("--task_step", type=int, default=10, help="任务数量步长")
     parser.add_argument("--num_devices", type=int, default=50, help="终端设备数量")
     parser.add_argument("--num_servers", type=int, default=10, help="边缘服务器数量")
     parser.add_argument("--save_plot", type=str, default="results/comparison.png", help="保存图表的路径")

@@ -1,0 +1,8 @@
+# 预处理模式
+python main.py --mode preprocess
+
+# 训练模式
+python main.py --mode train
+
+# 比较模式（默认）
+python main.py --mode compare
